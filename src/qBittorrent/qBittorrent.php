@@ -689,7 +689,7 @@ class qBittorrent extends AbstractClient
             echo "********RPC添加下载任务成功 [{$result}]".PHP_EOL.PHP_EOL;
         } else {
             $rs['result'] = empty($result) ? '未知错误，请稍后重试！' : $result;
-            echo "-----RPC添加种子任务，失败 [{$rs['result']}]".PHP_EOL.PHP_EOL;
+            echo "-----RPC添加种子任务，失败 [".$rs['result']."]".PHP_EOL.PHP_EOL;
         }
 
         return $rs;
